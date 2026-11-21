@@ -1,0 +1,18 @@
+:root { --zemin: #f7f2e8; --metin: #241c15; --soluk: #66594b; --vurgu: #a3271f; --cizgi: #dfd3c0; --kart: #fffaf1; }
+@media (prefers-color-scheme: dark) { :root { --zemin: #17130f; --metin: #f2e9dc; --soluk: #b5a794; --vurgu: #ef7a68; --cizgi: #3a3026; --kart: #211b15; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--zemin); color: var(--metin); font: 17px/1.65 Georgia, "Times New Roman", serif; }
+header, main, footer { width: min(760px, 100%); margin: 0 auto; padding: 0 20px; }
+header { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: baseline; justify-content: space-between; padding-top: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--cizgi); }
+header a.marka { color: var(--metin); font-size: 21px; font-weight: 700; text-decoration: none; }
+nav { display: flex; gap: 16px; font-size: 15px; }
+a { color: var(--vurgu); }
+main { padding-top: 30px; padding-bottom: 34px; }
+h1 { margin: 0 0 8px; font-size: clamp(30px, 6vw, 44px); line-height: 1.15; }
+h2 { margin: 34px 0 6px; font-size: 22px; }
+.tarih, .giris { color: var(--soluk); }
+.kanallar { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 24px 0; }
+.kanal { padding: 18px; background: var(--kart); border: 1px solid var(--cizgi); border-radius: 6px; }
+.kanal h2 { margin-top: 0; }
+.ayrac { margin: 48px 0 0; border: 0; border-top: 1px solid var(--cizgi); }
+footer { padding-top: 16px; padding-bottom: 30px; color: var(--soluk); font-size: 14px; border-top: 1px solid var(--cizgi); }
